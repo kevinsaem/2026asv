@@ -188,6 +188,26 @@ section + section{border-top:1px solid var(--line);}
 .who h3{font-size:16.5px;font-weight:900;}
 .who .yes h3{color:#0AA17E;} .who .no h3{color:var(--muted);}
 
+/* ─ mentors (퍼실리테이터 소개) ─ */
+.mintro{background:var(--panel);border:1.5px solid var(--line);border-radius:var(--r);padding:clamp(22px,3.5vw,32px);box-shadow:var(--shadow-sm);}
+.mintro p{margin:0;color:var(--fg);font-size:clamp(15px,2.2vw,16.5px);line-height:1.75;max-width:48em;}
+.mintro p b{color:var(--ink);font-weight:800;}
+.mintro .soon{margin-top:14px;font-size:13.5px;color:var(--muted);display:inline-flex;align-items:center;gap:8px;}
+.mintro .soon::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none;}
+.mentors{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:16px;}
+.mentor{background:var(--panel);border:1.5px solid var(--line);border-radius:var(--r);padding:24px 14px 20px;text-align:center;box-shadow:var(--shadow-sm);min-width:0;}
+.mentor .ava{width:92px;height:92px;border-radius:50%;margin:0 auto 14px;position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:36px;color:#fff;
+  box-shadow:inset 0 0 0 3px #fff,0 8px 18px -8px rgba(37,22,8,.35);background:var(--grad-art);}
+.mentor .ava .ph{position:absolute;inset:0;background:center/cover no-repeat;}
+.mentor:nth-child(1) .ava{background:linear-gradient(135deg,#FFC24B,#FF8A3C);}
+.mentor:nth-child(2) .ava{background:linear-gradient(135deg,#3DE0B0,#09A6BC);}
+.mentor:nth-child(3) .ava{background:linear-gradient(135deg,#B9A8FF,#6C5CE7);}
+.mentor:nth-child(4) .ava{background:linear-gradient(135deg,#FF9FB0,#FF5C77);}
+.mentor:nth-child(5) .ava{background:linear-gradient(135deg,#8FC2FF,#2F86FF);}
+.mentor .mn{font-weight:900;font-size:16.5px;color:var(--ink);}
+.mentor .mr{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.5;}
+
 /* ─ visual band (중간 띠 이미지 자리: band.jpg) ─ */
 .band{position:relative;overflow:hidden;background:var(--grad-art);border-top:0;padding-block:0;}
 .band .ph{position:absolute;inset:0;background:center/cover no-repeat;background-image:url('band.jpg');}
@@ -419,9 +439,30 @@ footer{border-top:1px solid var(--line2);background:var(--cream);padding-block:4
   </div>
 </section>
 
+<section>
+  <div class="wrap">
+    <div class="sechead"><span class="n">05</span><div><h2>함께하는 퍼실리테이터</h2>
+      <div class="sub">코딩이 아니라, 아이의 아이디어가 게임이 되도록 곁에서 돕습니다.</div></div></div>
+    <!-- 이름·사진 준비되면 아래 .mintro 를 지우고 이 주석 안의 .mentors 블록을 쓰세요.
+         사진은 자료실 폴더에 mentor1.jpg ~ mentor5.jpg (정사각 권장). 아바타 글자는 이름 첫 글자로 바꾸세요.
+    <div class="mentors">
+      <div class="mentor"><div class="ava">이<div class="ph" style="background-image:url('mentor1.jpg')"></div></div><div class="mn">이관희</div><div class="mr">총괄 퍼실리테이터</div></div>
+      <div class="mentor"><div class="ava">○<div class="ph" style="background-image:url('mentor2.jpg')"></div></div><div class="mn">이름</div><div class="mr">한 줄 소개</div></div>
+      <div class="mentor"><div class="ava">○<div class="ph" style="background-image:url('mentor3.jpg')"></div></div><div class="mn">이름</div><div class="mr">한 줄 소개</div></div>
+      <div class="mentor"><div class="ava">○<div class="ph" style="background-image:url('mentor4.jpg')"></div></div><div class="mn">이름</div><div class="mr">한 줄 소개</div></div>
+      <div class="mentor"><div class="ava">○<div class="ph" style="background-image:url('mentor5.jpg')"></div></div><div class="mn">이름</div><div class="mr">한 줄 소개</div></div>
+    </div>
+    -->
+    <div class="mintro">
+      <p>프로그래밍을 가르치는 선생님이 아니라, 학생이 <b>스스로 AI에게 지시해 게임을 완성</b>하도록 막히는 순간마다 곁에서 돕는 퍼실리테이터들이 양일 내내 함께합니다.</p>
+      <div class="soon">참여 퍼실리테이터 소개(이름 · 사진)는 곧 공개됩니다.</div>
+    </div>
+  </div>
+</section>
+
 <section id="apply">
   <div class="wrap">
-    <div class="sechead"><span class="n">05</span><div><h2>참가 신청</h2></div></div>
+    <div class="sechead"><span class="n">06</span><div><h2>참가 신청</h2></div></div>
     <div class="apply">
       <!-- 마감일 ② (두 곳 중 하나). 바꾸면 위 히어로 .btnnote 도 함께 고칠 것 -->
       <div class="deadline">
@@ -448,7 +489,7 @@ footer{border-top:1px solid var(--line2);background:var(--cream);padding-block:4
 
 <section>
   <div class="wrap">
-    <div class="sechead"><span class="n">06</span><div><h2>자주 묻는 질문</h2></div></div>
+    <div class="sechead"><span class="n">07</span><div><h2>자주 묻는 질문</h2></div></div>
     <div class="faqwrap">
     <details><summary>코딩을 한 번도 안 배웠는데 괜찮을까요?</summary>
       <p>괜찮습니다. 첫날 오전에 AI에게 원하는 것을 말로 설명하는 방법을 함께 익히고 시작합니다. 참가자 대부분이 프로그래밍 언어를 모르는 상태로 옵니다.</p></details>
