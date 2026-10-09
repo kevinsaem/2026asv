@@ -259,7 +259,8 @@ footer{border-top:1px solid var(--line2);background:var(--cream);padding-block:4
   .hero{padding-block:26px 42px;}
   .hero > .wrap{gap:22px;}
   .herovisual{aspect-ratio:16/11;border-width:5px;border-radius:22px;}
-  .herometa{gap:12px 22px;margin-top:22px;padding-top:18px;}
+  .herometa{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px;margin-top:22px;padding-top:18px;}
+  .herovisual .ph{background-position:center 32%;}  /* 모바일 배너 크롭 시 얼굴이 잘 보이게 */
   /* CTA: 손가락으로 누르기 쉽게 풀폭 버튼 + 보조문구 아래로 */
   .cta{gap:10px;}
   .cta .btn{width:100%;}
