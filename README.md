@@ -5,10 +5,17 @@
 
 ```
 hackathon-site/
-├── index.html   사이트 전체 (CSS·JS 인라인, 외부 의존성은 Google Fonts 뿐)
-├── og.png       카카오톡·SNS 공유 썸네일 (1200×630)
-└── README.md    이 문서
+├── index.html         사이트 전체 (CSS·JS 인라인, 외부 의존성은 Google Fonts 뿐)
+├── hero.jpg           히어로 비주얼 (세로 4:5)
+├── band.jpg           중간 비주얼 띠 (가로 와이드)
+├── og.jpg             카카오톡·SNS 공유 썸네일 (1200×630)
+├── favicon.ico        파비콘
+├── favicon-192.png    파비콘 (192px)
+├── 이미지_프롬프트.md   이미지 재제작용 프롬프트
+└── README.md          이 문서
 ```
+
+> 이미지(hero/band/og)가 없어도 사이트는 컬러 그라디언트로 완성돼 보입니다. 같은 이름으로 파일을 넣으면 자동 반영됩니다.
 
 ---
 
@@ -38,12 +45,12 @@ var APPLY_URL = "https://forms.gle/xxxxxxxxxxxx";
 
 ```html
 <link rel="canonical" href="https://example.com/">
-<meta property="og:image" content="og.png">
+<meta property="og:image" content="og.jpg">
 ```
 
 ```html
 <link rel="canonical" href="https://실제도메인/">
-<meta property="og:image" content="https://실제도메인/og.png">
+<meta property="og:image" content="https://실제도메인/og.jpg">
 ```
 
 > 카카오톡은 썸네일을 캐시합니다. 바꾼 뒤에도 옛 이미지가 보이면
