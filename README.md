@@ -3,6 +3,9 @@
 2026 ASV 과학축제 연계 행사의 소개 및 참가신청 랜딩 페이지입니다.
 의존성 없는 정적 사이트라 어디에 올려도 그대로 동작합니다.
 
+**🌐 배포 상태:** GitHub Pages 공개 중 — <https://kevinsaem.github.io/2026asv/> (HTTPS)
+`main` 브랜치 루트 기준. 푸시하면 1분 내 자동 재배포됩니다. canonical·og:image는 이 도메인 절대경로로 설정되어 있습니다.
+
 ```
 hackathon-site/
 ├── index.html         사이트 전체 (CSS·JS 인라인, 외부 의존성은 Google Fonts 뿐)
